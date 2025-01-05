@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    background-color: #D8CFD0;
+}
+
+#portfolio{
+    padding: 5px 0;
+    position: relative;
+    display: grid;
+}
+
+.work-list{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    grid-gap:20px;
+    margin-top: 10px;  
+}
+
+.work{
+    border-radius: 10px;
+    position: relative;
+    
+    overflow: hidden;
+}
+
+.work img{
+    height: 80%;
+    width: 100%;
+    border: 2px black solid;
+    border-style: inset ;
+    border-radius: 10px;
+    display: block;
+   
+    transition: transform 0.5s;
+
+
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#6B7A8F);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+   
+}
+
+h1{
+    color: #413F3D;
+}
+
+.layer h1{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 30px;
+    
+    background: whitesmoke;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    right: 45px;
+
+}
+.layer p{
+    font-size: 15px;
+    /*color: #27d6d4;*/
+    color: #F2F1EF;
+    padding: 5px;
+    position: relative;
+    right: 45px;
+
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: whitesmoke;
+    width: 60px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+
+.work:hover img{
+    height: 100%;
+    transform: scale(1.1);
+    text-decoration: none;
+    box-shadow: 0 0  0 80px #413F3D;
+   
+
+}
+.work:hover .layer{
+    height: 100%;
+    box-shadow: 0 0 0 80px #413F3D;
+   
+
+}
+.btn{
+    display:flex;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid#6B7A8F;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration:wavy;
+    color: #413F3D;
+    transition: background 0.5s ;
+    position: relative;
+    top: 150px;
+    
+}
+
+.btn:hover{
+    background: #6B7A8F;
+}
+    </style>
+</head>
+<body>
+    <div id="portfolio">
+        <div class="container">
+          
+            <div class="work-list">
+                <div class="work">
+
+                    <img src="skills.webp" alt="geology">
+                    <h1>Skills</h1>
+                    <div class="layer">
+                        
+                            <h1>Skills</h1>
+                            <p>
+                            GIS:<br> Geographical Information System<br>
+                            RS:<br> Remote Sensing<br>
+                            Web developer:<br> Web GIS development<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Experiance.jpg" alt="">
+                    <h1>Experience</h1>
+                    <div class="layer">
+                    
+                            <h1>Experience</h1>
+                            <p>
+                            2021-2023:<br> Worked in 'Bhoomi Geotechnical Solution' :- as a Mine plan
+                                designer <br>
+                            2018-2019:<br> Internship at IIT-Bombay<br>
+                        </p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Education.jpg" alt="">
+                    <h1>Education</h1>
+                    <div class="layer">
+                      
+                            <h1>Education</h1>
+                            <p>
+                           2023<br> Web Development(Python,HTML,CSS,JS,Bootstrap,Tkinter,Django) from
+                                Academy of Geospatial Technology,Karad<br>
+                            2022<br> GIS(Autocad,Arc GIS) from Academy of Geospatial Technology,Karad
+                            <br>
+                            2020<br> PGDEPM from Shivaji University,Kolhapur<br>
+                           2019<br> M.Sc in Geology from Gopal Krishna Gokhale College,Kolhapur<br>
+                            2017<br> B.Sc in Geology from Yashwantrao Chavan College of Science,Karad
+                                <br>
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <a href="portTwo.html" class="btn">Back</a>
+        </div>
+    </div>
+</body>
+</html>
